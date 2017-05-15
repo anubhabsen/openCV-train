@@ -10,6 +10,9 @@ def get_image():
 	val, im = camera.read()
 	return im
 
+for i in xrange(60):
+	temp = get_image()
+
 print("Ready to take image")
 
 camera_capture = get_image()
